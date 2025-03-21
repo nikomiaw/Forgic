@@ -1,0 +1,614 @@
+  /* Paleta de colores */
+  @import url(https://db.onlinewebfonts.com/c/70e31dfb392193be12e52cede4e38a44?family=VLNL+WoodBurger+W00+Regular);
+  @font-face {
+      font-family: "VLNL WoodBurger W00 Regular";
+      src: url("https://db.onlinewebfonts.com/t/70e31dfb392193be12e52cede4e38a44.eot");
+      src: url("https://db.onlinewebfonts.com/t/70e31dfb392193be12e52cede4e38a44.eot?#iefix")format("embedded-opentype"),
+      url("https://db.onlinewebfonts.com/t/70e31dfb392193be12e52cede4e38a44.woff2")format("woff2"),
+      url("https://db.onlinewebfonts.com/t/70e31dfb392193be12e52cede4e38a44.woff")format("woff"),
+      url("https://db.onlinewebfonts.com/t/70e31dfb392193be12e52cede4e38a44.ttf")format("truetype"),
+      url("https://db.onlinewebfonts.com/t/70e31dfb392193be12e52cede4e38a44.svg#VLNL WoodBurger W00 Regular")format("svg");
+  }
+  @import url(https://db.onlinewebfonts.com/c/1537f3b522b97fc6fea81d31ebba5112?family=YDGothic+540+Pro);
+  @font-face {
+    font-family: "YDGothic540Pro";
+    src: url("https://db.onlinewebfonts.com/t/1537f3b522b97fc6fea81d31ebba5112.eot");
+    src: url("https://db.onlinewebfonts.com/t/1537f3b522b97fc6fea81d31ebba5112.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/1537f3b522b97fc6fea81d31ebba5112.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/1537f3b522b97fc6fea81d31ebba5112.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/1537f3b522b97fc6fea81d31ebba5112.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/1537f3b522b97fc6fea81d31ebba5112.svg#YDGothic 540 Pro")format("svg");
+  }
+  @import url(https://db.onlinewebfonts.com/c/551ccc70fa05a2851638eef4f70ee18c?family=Vinila+Test+Black);
+  @font-face {
+    font-family: "Vinila Test Black";
+    src: url("https://db.onlinewebfonts.com/t/551ccc70fa05a2851638eef4f70ee18c.eot");
+    src: url("https://db.onlinewebfonts.com/t/551ccc70fa05a2851638eef4f70ee18c.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/551ccc70fa05a2851638eef4f70ee18c.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/551ccc70fa05a2851638eef4f70ee18c.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/551ccc70fa05a2851638eef4f70ee18c.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/551ccc70fa05a2851638eef4f70ee18c.svg#Vinila Test Black")format("svg");
+  }
+  @font-face {
+    font-family: 'spiegelsanscd_trialregular';
+    src: url('spiegelsanscd-5regular_trial-webfont.woff2') format('woff2'),
+        url('spiegelsanscd-5regular_trial-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+  }
+  :root {
+
+    --bgcolor:#1a1a1a;
+      --black: #111;
+      --green: #a7ff60;
+    }
+    
+    body {
+      font-family: "spiegelsanscd_trialregular";
+      margin: 0;
+      padding: 0;
+      background-color: var(--bgcolor);
+      color: #fff;
+    }
+    
+    header {
+      background-color: #0c0c0c;
+      max-height: 70px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 4;
+      padding: 5px ;
+
+    }
+    
+    .logo img {
+      border-radius: 4px;
+      max-height: 50px;
+      transform: translateY(70px);
+    }
+    
+    .nav-links {
+      margin-top: 100px;
+      list-style: none;
+      display: flex;
+      gap: 40px;
+      transform: translateX(20px) translateY(-70px);
+
+    }
+    .navbutton{
+      transition: 0.3s;
+      background: var(--bgcolor);
+      border: none;
+        width: 150px ;
+      height: 35px ;
+      border-radius: 4px;
+
+    }
+    .nav-links a  {
+      size: 100px ;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 20px;
+      transition: 0.3s ;
+
+    }
+  .navbutton a:hover, .navbutton:hover{
+  font-size: 25px;
+      color:var(--green);
+      width: 180px;
+      font-family: 'Vinila Test Black', sans-serif;
+
+      color: #a7ff60;
+   
+      text-shadow: 0 0 10px rgba(167, 255, 96, 0.8);
+   
+    }
+
+    
+
+    .hero-content h1 {
+      font-family: "Vinila Test Black";
+      font-size: 4rem;
+      margin: 0;
+      color: var(--green);
+    }
+    
+    .hero-content p{
+      font-family: "spiegelsanscd_trialregular";
+          
+        overflow-wrap: break-word; /* Rompe palabras largas */
+        word-wrap: break-word; /* Compatibilidad con navegadores antiguos */
+    }
+    .scrolling-texts {
+      background-color: #111;
+      padding: 10px 0;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+    
+    .scrolling-text-container {
+      display: inline-block;
+      animation: scrollText 20s linear infinite;
+    }
+    
+    .scrolling-text-container p {
+      display: inline-block;
+      margin: 0 20px;
+      color: var(--green);
+      font-size: 1.2rem;
+    }
+    
+    @keyframes scrollText {
+      0% { transform: translateX(100%); }
+      100% { transform: translateX(-100%); }
+    }
+    
+    .characters, .news, .about {
+      padding: 50px 20px;
+      text-align: center;
+    }
+    
+    .character-grid, .news-grid {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    
+    .character-card, .news-card {
+      background-color: #333;
+      padding: 20px;
+      border-radius: 10px;
+      width: 200px;
+    }
+    
+    .character-card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    
+    footer {
+      background-color: #111;
+      text-align: center;
+      padding: 20px auto;
+    }
+    .scrolling-texts {  
+      background-color: #111;
+      padding: 10px 0;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+    
+    .scrolling-text-container {
+      display: inline-flex; /* Usamos flex para alinear textos */
+      animation: scrollText 40s linear infinite;
+    
+    }
+    .scrolling-text-container img{
+  width: 40em;
+  height: 40px;
+    fill:red;
+  stroke: #a7ff60;
+
+    }
+    
+    .scrolling-text-container p {
+      margin: 0 20px;
+      color: var(--green);
+      font-size: 2rem;
+      white-space: nowrap;
+      font-family: "VLNL WoodBurger W00 Regular";
+    }
+    
+    @keyframes scrollText {
+      0% {
+        transform: translateX(0%); /* Empieza desde la derecha */
+      }
+      100% {
+        transform: translateX(-100%); /* Mueve solo la mitad del ancho total */
+      }
+    }
+  /* From Uiverse.io by mobinkakei */ 
+  /* ========== ESTILOS DEL NUEVO HERO ========== */
+.new-hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: linear-gradient(135deg, #1a1a1a, #0c0c0c);
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(167, 255, 96, 0.1) 10%, transparent 50%);
+  animation: pulse 6s infinite alternate;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.3;
+  }
+  100% {
+    transform: scale(1.2);
+    opacity: 0.6;
+  }
+}
+
+.hero-content {
+  text-align: center;
+  z-index: 2;
+  max-width: 800px;
+  padding: 20px;
+}
+
+.hero-title {
+  font-family: 'Vinila Test Black', sans-serif;
+  font-size: clamp(3rem, 10vw, 6rem);
+  color: #a7ff60;
+  margin-bottom: 20px;
+  text-shadow: 0 0 10px rgba(167, 255, 96, 0.8);
+  animation: fadeIn 2s ease-in-out;
+}
+
+.hero-subtitle {
+  font-family: 'spiegelsanscd_trialregular', sans-serif;
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
+  color: #fff;
+  margin-bottom: 40px;
+  line-height: 1.6;
+  animation: fadeIn 2.5s ease-in-out;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.hero-button {
+  display: inline-flex;
+  align-items: center;
+  padding: 15px 30px;
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-button.primary {
+  background: #a7ff60;
+  color: #1a1a1a;
+}
+
+.hero-button.secondary {
+  background: transparent;
+  border: 2px solid #a7ff60;
+  color: #a7ff60;
+}
+
+.hero-button .button-icon {
+  margin-left: 10px;
+  transition: transform 0.3s ease;
+}
+
+.hero-button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(167, 255, 96, 0.4);
+}
+
+.hero-button.primary:hover {
+  background: #8fdc50;
+}
+
+.hero-button.secondary:hover {
+  background: rgba(167, 255, 96, 0.1);
+}
+
+.hero-button:hover .button-icon {
+  transform: translateX(5px);
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 570px) {
+  .hero-title {
+    font-size: clamp(2.5rem, 8vw, 4rem);
+  }
+
+  .hero-subtitle {
+    font-size: clamp(0.9rem, 2vw, 1.2rem);
+  }
+
+  .hero-button {
+    padding: 12px 25px;
+    font-size: 1rem;
+  }
+  .hamburger {
+  display: none; /* Oculto por defecto */
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px;
+  height: 25px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 1000;
+}
+
+.hamburger-line {
+  width: 100%;
+  height: 3px;
+  background: #fff;
+  transition: all 0.3s ease;
+}
+
+  .hamburger {
+    display: flex; /* Mostrar solo en móviles */
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: -100%; /* Oculta el menú */
+    height: 100vh;
+    width: 70%;
+    background: #0c0c0c;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    transition: right 0.3s ease;
+    z-index: 999;
+  }
+
+  .nav-links.active {
+    right: 0; /* Muestra el menú */
+  }
+
+  .navbutton {
+    width: 80%;
+    text-align: center;
+  }
+
+  
+  
+}
+
+@media (max-width: 480px) {
+  .hero-buttons {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .hero-button {
+    width: 100%;
+    justify-content: center;
+  }
+  .logo{
+    transform: translateY(-70px);
+  }
+  .hamburger{
+    
+    transform: translateX(90px) translateY(30px);
+  }
+}
+  #Left{
+    margin-left: 500px; 
+    margin-top: -70px;
+  }
+  .cta a{
+    color: #fff;
+    text-decoration: none;
+  }
+  .cta:focus {
+    outline: none;
+  }
+
+  .cta:hover {
+    transition: 0.5s;
+    box-shadow: 10px 10px 0 #111;
+  }
+
+  .cta .second {
+    transition: 0.5s;
+    margin-right: 0px;
+  }
+
+  .cta:hover .second {
+    transition: 0.5s;
+    margin-right: 45px;
+  }
+
+  .span {
+    transform: skewX(15deg);
+  }
+
+  .second {
+    width: 20px;
+    margin-left: 30px;
+    position: relative;
+    top: 12%;
+  }
+
+  .one {
+    transition: 0.4s;
+    transform: translateX(-60%);
+  }
+
+  .two {
+    transition: 0.5s;
+    transform: translateX(-30%);
+  }
+
+  .cta:hover .three {
+    animation: color_anim 1s infinite 0.2s;
+  }
+
+  .cta:hover .one {
+    transform: translateX(0%);
+    animation: color_anim 1s infinite 0.6s;
+  }
+
+  .cta:hover .two {
+    transform: translateX(0%);
+    animation: color_anim 1s infinite 0.4s;
+  }
+
+  @keyframes color_anim {
+    0% {
+      fill: white;
+    }
+
+    50% {
+      fill: var(--black);
+    }
+
+    100% {
+      fill: white;
+    }
+  }
+
+  @media (max-width: 918px) {
+    .nav-links {
+      gap: 10px;
+    }
+
+    /* Hero: reducir tamaño del título */
+    .hero-content h1 {
+      font-size: 3rem;
+    }
+
+    /* Textos en movimiento: reducir margen */
+    .scrolling-text-container p {
+      margin: 0 10px;
+      font-size: 1rem;
+    }
+
+    /* Personajes: 2 columnas */
+    .character-grid {
+      max-width: 600px;
+      margin: 0 auto;
+      
+    }
+    .cta, #Left{
+      transform: translateX(0rem);
+    }
+
+  }
+
+  /* Móvil: 480px o menos */
+  @media (max-width: 480px) {
+    /* Navegación: apilar elementos verticalmente */
+    header {
+      flex-direction: column;
+      padding: 10px;
+    }
+
+    .nav-links {
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 10px;
+    }
+
+    /* Hero: título más pequeño */
+    .hero-content h1 {
+      font-size: 2rem;
+    }
+
+    /* Textos en movimiento: tamaño de fuente más pequeño */
+    .scrolling-text-container p {
+      font-size: 0.8rem;
+      margin: 0 5px;
+    }
+
+    /* Personajes y noticias: una columna */
+    .character-card, .news-card {
+      width: 90%;
+      max-width: 300px;
+  }
+  .cta{
+    margin-left: 0px; 
+    margin-right: 0px;
+  }
+  #Left{
+    margin-right: 0px;
+    margin-left: 0px; 
+    margin-bottom:S;
+  }
+  }
+  @media (max-width: 480px) {
+    /* Navegación: apilar elementos verticalmente */
+    header {
+      flex-direction: column;
+      padding: 10px;
+    }
+
+    .nav-links {
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 10px;
+    }
+
+    /* Hero: título más pequeño */
+    .hero-content h1 {
+      font-size: 2rem;
+    }
+
+    /* Textos en movimiento: tamaño de fuente más pequeño */
+    .scrolling-text-container p {
+      font-size: 0.8rem;
+      margin: 0 5px;
+    }
+
+    /* Personajes y noticias: una columna */
+    .character-card, .news-card {
+      width: 90%;
+      max-width: 300px;
+    }
+    .cta{
+      transform: translateX(0rem);
+    }   
+    #Left{
+      transform: translateX(0rem);
+    }
+  }
+
+  /* Asegurar que las imágenes sean responsive */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  button{
+    border: none;
+    background: transparent;
+  }
